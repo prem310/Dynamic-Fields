@@ -1,0 +1,26 @@
+<html>
+<head lang="en">
+	<title>Dynamic Directive</title>
+	<script src="../library/angular.js"></script>
+	<script src="../directive/dynamicField.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div ng-app="mainModule">
+	<div ng-controller="mainController">
+	
+	<form>
+	    <dynamic-field field-type="text" model="modelData.text"></dynamic-field>
+	    <br/><b>TextBox Value: {{modelData.text}}</b>
+	    <br/>
+	    <br/>
+	    <dynamic-field field-type="checkbox" model="modelData.check"></dynamic-field>
+	    <br/>
+	    <b>CheckBox Value: {{modelData.check}}</b>
+		
+    </form> 	
+	</div></div>
+</body>
+
+</html>
